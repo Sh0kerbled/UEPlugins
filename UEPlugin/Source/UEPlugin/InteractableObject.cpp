@@ -3,4 +3,4 @@
 
 #include "InteractableObject.h"
 
-// TODO DELETE
+// Add default functionality here for any IInteractableObject functions that are not pure virtual.

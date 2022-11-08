@@ -8,16 +8,15 @@
 #include "InteractableActor.generated.h"
 
 UCLASS()
-class UEPLUGIN_API AInteractableActor : public AActor, public IInteractableObject
+class PLUGINS_API AInteractableActor : public AActor,public IInteractableObject
 {
 	GENERATED_BODY()
 	
 public:	
 
-UFUNCTION(BlueprintCallable)
-void OnInteractionFinished(AActor* ActorInteractedWithObject)
-{
-	NotifyInteractionFinished(this, ActorInteractedWithObject);
-}
-	
+	UFUNCTION(BlueprintCallable)
+	void OnInteractionFinished(AActor* ActorInteractedWithObject)
+	{
+		NotifyInteractionFinished(this, ActorInteractedWithObject);
+	}
 };
