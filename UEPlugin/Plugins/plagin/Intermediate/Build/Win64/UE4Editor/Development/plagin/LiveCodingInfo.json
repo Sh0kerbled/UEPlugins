@@ -1,0 +1,10 @@
+{
+	"RemapUnityFiles": 
+	{
+		"Module.plagin.cpp.obj": [
+			"plagin.cpp.obj",
+			"plaginCommands.cpp.obj",
+			"plaginStyle.cpp.obj"
+		]
+	}
+}

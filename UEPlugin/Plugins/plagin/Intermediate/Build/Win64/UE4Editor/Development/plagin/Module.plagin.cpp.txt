@@ -1,0 +1,45 @@
+C:\Users\Dauren\Documents\Unreal Projects\Plugins\Plugins\plagin\Intermediate\Build\Win64\UE4Editor\Development\plagin\Definitions.plagin.h
+C:/Users/Dauren/Documents/Unreal Projects/Plugins/Plugins/plagin/Source/plagin/Private/plagin.cpp
+C:\Users\Dauren\Documents\Unreal Projects\Plugins\Plugins\plagin\Source\plagin\Public\plagin.h
+C:\Users\Dauren\Documents\Unreal Projects\Plugins\Plugins\plagin\Source\plagin\Public\plaginStyle.h
+C:\Program Files\Epic Games\UE_4.27\Engine\Source\Runtime\SlateCore\Public\Styling/SlateStyle.h
+C:\Program Files\Epic Games\UE_4.27\Engine\Source\Runtime\SlateCore\Public\Brushes/SlateBorderBrush.h
+C:\Program Files\Epic Games\UE_4.27\Engine\Source\Runtime\SlateCore\Public\Brushes/SlateBoxBrush.h
+C:\Program Files\Epic Games\UE_4.27\Engine\Source\Runtime\SlateCore\Public\Brushes/SlateColorBrush.h
+C:\Program Files\Epic Games\UE_4.27\Engine\Source\Runtime\SlateCore\Public\Brushes/SlateImageBrush.h
+C:\Users\Dauren\Documents\Unreal Projects\Plugins\Plugins\plagin\Source\plagin\Public\plaginCommands.h
+C:\Program Files\Epic Games\UE_4.27\Engine\Source\Editor\LevelEditor\Public\LevelEditor.h
+C:\Program Files\Epic Games\UE_4.27\Engine\Source\Editor\LevelEditor\Public\ILevelEditor.h
+C:\Program Files\Epic Games\UE_4.27\Engine\Source\Editor\LevelEditor\Public\ViewportTypeDefinition.h
+C:\Program Files\Epic Games\UE_4.27\Engine\Source\Developer\ToolMenus\Public\ToolMenus.h
+C:\Program Files\Epic Games\UE_4.27\Engine\Source\Developer\ToolMenus\Public\IToolMenusModule.h
+C:\Program Files\Epic Games\UE_4.27\Engine\Source\Developer\ToolMenus\Public\ToolMenu.h
+C:\Program Files\Epic Games\UE_4.27\Engine\Source\Developer\ToolMenus\Public\ToolMenuOwner.h
+C:\Program Files\Epic Games\UE_4.27\Engine\Intermediate\Build\Win64\UE4Editor\Inc\ToolMenus\ToolMenuOwner.generated.h
+C:\Program Files\Epic Games\UE_4.27\Engine\Source\Developer\ToolMenus\Public\ToolMenuDelegates.h
+C:\Program Files\Epic Games\UE_4.27\Engine\Source\Developer\ToolMenus\Public\ToolMenuMisc.h
+C:\Program Files\Epic Games\UE_4.27\Engine\Intermediate\Build\Win64\UE4Editor\Inc\ToolMenus\ToolMenuMisc.generated.h
+C:\Program Files\Epic Games\UE_4.27\Engine\Intermediate\Build\Win64\UE4Editor\Inc\ToolMenus\ToolMenuDelegates.generated.h
+C:\Program Files\Epic Games\UE_4.27\Engine\Source\Developer\ToolMenus\Public\ToolMenuSection.h
+C:\Program Files\Epic Games\UE_4.27\Engine\Source\Developer\ToolMenus\Public\ToolMenuEntry.h
+C:\Program Files\Epic Games\UE_4.27\Engine\Intermediate\Build\Win64\UE4Editor\Inc\ToolMenus\ToolMenuEntry.generated.h
+C:\Program Files\Epic Games\UE_4.27\Engine\Intermediate\Build\Win64\UE4Editor\Inc\ToolMenus\ToolMenuSection.generated.h
+C:\Program Files\Epic Games\UE_4.27\Engine\Source\Runtime\Slate\Public\Framework/MultiBox/ToolMenuBase.h
+C:\Program Files\Epic Games\UE_4.27\Engine\Source\Runtime\Core\Public\Misc/BlacklistNames.h
+C:\Program Files\Epic Games\UE_4.27\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Slate\ToolMenuBase.generated.h
+C:\Program Files\Epic Games\UE_4.27\Engine\Intermediate\Build\Win64\UE4Editor\Inc\ToolMenus\ToolMenu.generated.h
+C:\Program Files\Epic Games\UE_4.27\Engine\Source\Developer\ToolMenus\Public\ToolMenuEntryScript.h
+C:\Program Files\Epic Games\UE_4.27\Engine\Intermediate\Build\Win64\UE4Editor\Inc\ToolMenus\ToolMenuEntryScript.generated.h
+C:\Program Files\Epic Games\UE_4.27\Engine\Intermediate\Build\Win64\UE4Editor\Inc\ToolMenus\ToolMenus.generated.h
+C:/Users/Dauren/Documents/Unreal Projects/Plugins/Plugins/plagin/Source/plagin/Private/plaginCommands.cpp
+C:/Users/Dauren/Documents/Unreal Projects/Plugins/Plugins/plagin/Source/plagin/Private/plaginStyle.cpp
+C:\Program Files\Epic Games\UE_4.27\Engine\Source\Runtime\SlateCore\Public\Styling/SlateStyleRegistry.h
+C:\Program Files\Epic Games\UE_4.27\Engine\Source\Runtime\Engine\Public\Slate/SlateGameResources.h
+C:\Program Files\Epic Games\UE_4.27\Engine\Source\Runtime\Projects\Public\Interfaces/IPluginManager.h
+C:\Program Files\Epic Games\UE_4.27\Engine\Source\Runtime\Projects\Public\PluginDescriptor.h
+C:\Program Files\Epic Games\UE_4.27\Engine\Source\Runtime\Projects\Public\ModuleDescriptor.h
+C:\Program Files\Epic Games\UE_4.27\Engine\Source\Runtime\Json\Public\Serialization/JsonWriter.h
+C:\Program Files\Epic Games\UE_4.27\Engine\Source\Runtime\Json\Public\Serialization/JsonTypes.h
+C:\Program Files\Epic Games\UE_4.27\Engine\Source\Runtime\Projects\Public\CustomBuildSteps.h
+C:\Program Files\Epic Games\UE_4.27\Engine\Source\Runtime\Projects\Public\LocalizationDescriptor.h
+C:\Program Files\Epic Games\UE_4.27\Engine\Source\Runtime\Projects\Public\PluginReferenceDescriptor.h

@@ -1,0 +1,12 @@
+/NOLOGO
+/errorReport:prompt
+/MACHINE:x64
+/SUBSYSTEM:WINDOWS
+/DEF
+/NAME:"UE4Editor-plagin.dll"
+/IGNORE:4221
+/NODEFAULTLIB
+"C:\Users\Dauren\Documents\Unreal Projects\Plugins\Intermediate\Build\Win64\PluginsEditor\Development\UnrealEd\SharedPCH.UnrealEd.ShadowErrors.h.obj"
+"C:\Users\Dauren\Documents\Unreal Projects\Plugins\Plugins\plagin\Intermediate\Build\Win64\UE4Editor\Development\plagin\Module.plagin.cpp.obj"
+"C:\Users\Dauren\Documents\Unreal Projects\Plugins\Plugins\plagin\Intermediate\Build\Win64\UE4Editor\Development\plagin\Default.rc2.res"
+/OUT:"C:\Users\Dauren\Documents\Unreal Projects\Plugins\Plugins\plagin\Intermediate\Build\Win64\UE4Editor\Development\plagin\UE4Editor-plagin.lib"
