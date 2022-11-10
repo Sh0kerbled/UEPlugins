@@ -11,7 +11,6 @@ class FMenuBuilder;
 class FplaginModule : public IModuleInterface
 {
 public:
-
 	/** IModuleInterface implementation */
 	virtual void StartupModule() override;
 	virtual void ShutdownModule() override;
@@ -21,9 +20,13 @@ public:
 	
 private:
 
-	void RegisterMenus();
-
+	void AddToolbarExtension(FToolBarBuilder& Builder);
+	
+	void AddMenuExtension(FMenuBuilder& Builder);
+	
 	TSharedRef<class SDockTab> OnSpawnPluginTab(const class FSpawnTabArgs& SpawnTabArgs);
+	
+	void RegisterMenus();
 
 private:
 	TSharedPtr<class FUICommandList> PluginCommands;

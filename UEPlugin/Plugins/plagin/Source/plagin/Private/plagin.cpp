@@ -8,6 +8,7 @@
 #include "Widgets/Layout/SBox.h"
 #include "Widgets/Text/STextBlock.h"
 #include "ToolMenus.h"
+#include "Engine/Selection.h"
 
 static const FName plaginTabName("plagin");
 
@@ -35,6 +36,15 @@ void FplaginModule::StartupModule()
 		.SetDisplayName(LOCTEXT("FplaginTabTitle", "plagin"))
 		.SetMenuType(ETabSpawnerMenuType::Hidden);
 
+	FLevelEditorModule& LevelEditorModule =
+    FModuleManager::LoadModuleChecked<FLevelEditorModule>("LevelEditor");
+    {
+    TSharedPtr<FExtender> MenuExtender = MakeShareable(new FExtender());
+    MenuExtender->AddMenuExtension("WindowLayout", EExtensionHook::After,
+    PluginCommands, FMenuExtensionDelegate::CreateRaw(this,
+    &FplaginModule::AddMenuExtension));
+    LevelEditorModule.GetMenuExtensibilityManager()->AddExtender(MenuExtender);
+    }
 	
 	FGlobalTabmanager::Get()->RegisterNomadTabSpawner(plaginTabName,
 	FOnSpawnTab::CreateRaw(this, &FplaginModule::OnSpawnPluginTab))
@@ -42,6 +52,41 @@ void FplaginModule::StartupModule()
 	"StandaloneWindowTest"))
 	.SetMenuType(ETabSpawnerMenuType::Hidden);
 
+	PluginCommands = MakeShareable(new FUICommandList);
+    PluginCommands->MapAction(FplaginModule::Get().OpenPluginWindow,FExecuteAction::CreateRaw(this,&FplaginModule::PluginButtonClicked),FCanExecuteAction());
+
+	FLevelEditorModule& LevelEditorModule =
+FModuleManager::LoadModuleChecked<FLevelEditorModule>("LevelEditor");
+	{
+		TSharedPtr<FExtender> MenuExtender = MakeShareable(new FExtender());
+		MenuExtender->AddMenuExtension("WindowLayout", EExtensionHook::After,
+		PluginCommands, FMenuExtensionDelegate::CreateRaw(this,
+		&FplaginModule::AddMenuExtension));
+		LevelEditorModule.GetMenuExtensibilityManager()->AddExtender(MenuExtender);
+	}
+
+	{
+		TSharedPtr<FExtender> ToolbarExtender = MakeShareable(new FExtender);
+		ToolbarExtender->AddToolBarExtension("Settings", EExtensionHook::After,
+		PluginCommands, FToolBarExtensionDelegate::CreateRaw(this,
+		&FplaginModule::AddToolbarExtension));
+		LevelEditorModule.GetToolBarExtensibilityManager()->AddExtender(ToolbarExtender);
+	}
+
+	FGlobalTabmanager::Get()->RegisterNomadTabSpawner(plaginTabName,
+	FOnSpawnTab::CreateRaw(this, &FplaginModule::OnSpawnPluginTab))
+	.SetDisplayName(LOCTEXT("FStandaloneWindowTestTabTitle",
+	"StandaloneWindowTest"))
+	.SetMenuType(ETabSpawnerMenuType::Hidden);
+}
+void FplaginModule::AddToolbarExtension(FToolBarBuilder& Builder)
+{
+	Builder.AddToolBarButton(FplaginCommands::Get().OpenPluginWindow);
+}
+
+void FplaginModule::AddMenuExtension(FMenuBuilder& Builder)
+{
+Builder.AddMenuEntry(FplaginCommands::Get().OpenPluginWindow);
 }
 
 void FplaginModule::ShutdownModule()
@@ -80,8 +125,7 @@ SNew(SButton)
 {
 	if (GEditor)
 	{
-		for (FSelectionIterator
-		Iter((GEditor->GetSelectedActorIterator())); Iter; ++Iter)
+		for (FSelectionIterator Iter((GEditor->GetSelectedActorIterator())); Iter; ++Iter)
 		{
 		AActor* Actor = Cast<AActor>(*Iter);
 			if (Actor)
